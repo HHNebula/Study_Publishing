@@ -1,0 +1,118 @@
+#head {
+    position: absolute;
+    width: 20.8333vw;
+    height: 3.0208vw;
+    left: 5.2083vw;
+    top: 3.6458vw;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.0833vw;
+    line-height: 3.0208vw;
+
+    color: #000000;
+}
+
+#title1 {
+    position: absolute;
+    width: 20.8333vw;
+    height: 3.7500vw;
+    left: 5.2083vw;
+    top: 8.7500vw;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.6042vw;
+    line-height: 3.7500vw;
+
+    color: #000000;
+}
+
+#title2 {
+    position: absolute;
+    width: 20.8333vw;
+    height: 3.7500vw;
+    left: 28.1250vw;
+    top: 8.7500vw;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.6042vw;
+    line-height: 3.7500vw;
+
+    color: #000000;
+
+}
+
+#title3 {
+    position: absolute;
+    width: 20.8333vw;
+    height: 3.7500vw;
+    left: 51.0417vw;
+    top: 8.7500vw;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.6042vw;
+    line-height: 3.7500vw;
+
+    color: #000000;
+
+}
+
+#contents1 {
+    position: absolute;
+    width: 20.8333vw;
+    height: 40.3125vw;
+    left: 5.2083vw;
+    top: 15.5417vw;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.0417vw;
+    line-height: 2.2396vw;
+
+    color: #000000;
+}
+
+#contents2 {
+    position: absolute;
+    width: 20.8333vw;
+    height: 40.3125vw;
+    left: 28.1250vw;
+    top: 15.5417vw;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.0417vw;
+    line-height: 2.2396vw;
+
+    color: #000000;
+}
+
+#contents3 {
+    position: absolute;
+    width: 20.8333vw;
+    height: 40.3125vw;
+    left: 51.0417vw;
+    top: 15.5417vw;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.0417vw;
+    line-height: 2.2396vw;
+
+    color: #000000;
+}
+
+a {
+    text-decoration-line: none;
+    color: #000000;
+}
