@@ -48,6 +48,32 @@
         </form>
     </form>
 
+    <h1>숫자 입력 필드 연습</h1>
+    <ul>
+        <li>
+            <label><input type="checkbox" value="s_3">선물용 3kg</label>
+            <input type="number" min="0" max="5">개 (최대 5개)
+        </li>
+        <li>
+            <label><input type="checkbox" value="s_3">선물용 3kg</label>
+            <input type="range" min="0" max="5">개 (최대 5개)
+        </li>
+    </ul>
+    <h1>날짜, 시간 입력 필드 연습</h1>
+    <input type="date">
+    <input type="month">
+    <input type="week">
+    <br>
+    <input type="time">
+    <input type="datetime">
+    <input type="datetime-local">
+    <h1>날짜, 시간의 범위 지정</h1>
+    <form action="">
+        <input type="datetime-local" min="9:00:00" max="26:00:00">
+        <input type="time" min="9:00:00" max="26:00:00">
+        <p><input type="submit" value="Submit"></p>
+    </form>
+
 </body>
 
 </html>
