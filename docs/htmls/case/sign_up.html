@@ -76,19 +76,19 @@
                         </th>
                         <td>
                             <div>
-                                <input type="text" name="email1" id="email1">
+                                <input type="text" name="emailHeader" id="email">
                                 @
-                                <input type="text" name="email2" id="email2">
+                                <input type="text" name="emailFooter" id="email">
                                 <select name="domain" id="domain">
                                     <option value="non">메일주소선택</option>
-                                    <option value="non">네이버</option>
-                                    <option value="non">다음</option>
-                                    <option value="non">카카오</option>
+                                    <option value="naver">네이버</option>
+                                    <option value="daum">다음</option>
+                                    <option value="kakao">카카오</option>
                                 </select>
                                 <input type="button" value="인증코드발송">
                             </div>
                             <div>
-                                <input type="text" name="code" id="code">
+                                <input type="text" name="emailCode" id="code">
                                 <input type="button" value="인증확인">
                             </div>
                         </td>
@@ -100,7 +100,7 @@
                         <td>
                             <div>
                                 휴대전화
-                                <select name="num" id="num">
+                                <select name="phoneCode" id="tel">
                                     <option value="non">선택</option>
                                     <option value="010">010</option>
                                     <option value="011">011</option>
@@ -108,23 +108,23 @@
                                     <option value="017">017</option>
                                 </select>
                                 -
-                                <input type="text" name="mid" id="mid">
+                                <input type="text" name="phoneMid" id="tel">
                                 -
-                                <input type="text" name="end" id="end">
+                                <input type="text" name="phoneEnd" id="tel">
                             </div>
                             <div>
                                 일반전화
-                                <select name="num" id="num">
+                                <select name="telCode" id="tel">
                                     <option value="non">선택</option>
-                                    <option value="010">02</option>
-                                    <option value="011">031</option>
-                                    <option value="016">032</option>
-                                    <option value="017">055</option>
+                                    <option value="02">02</option>
+                                    <option value="031">031</option>
+                                    <option value="032">032</option>
+                                    <option value="055">055</option>
                                 </select>
                                 -
-                                <input type="text" name="mid" id="mid">
+                                <input type="text" name="telMid" id="tel">
                                 -
-                                <input type="text" name="end" id="end">
+                                <input type="text" name="telEnd" id="tel">
                             </div>
                             <div>
                                 <p>
@@ -149,10 +149,10 @@
                         </th>
                         <td>
                             <div>
-                                <input type="text" name="addr1" id="addr" style="width:600px;">
+                                <input type="text" name="addr" id="addr" style="width:600px;">
                             </div>
                             <div>
-                                <input type="text" name="addr2" id="addr" style="width:400px;">
+                                <input type="text" name="detailAddr" id="addr" style="width:400px;">
                             </div>
                         </td>
                     </tr>
@@ -162,9 +162,9 @@
                         </th>
                         <td>
                             서비스 및 이벤트 소식을
-                            <input type="checkbox" name="email" id="info">
+                            <input type="checkbox" name="emailInfo" id="info">
                             Email로 수신하겠습니다.
-                            <input type="checkbox" name="sms" id="info">
+                            <input type="checkbox" name="smsInfo" id="info">
                             SMS로 수신하겠습니다.
                             <input type="submit" value="send">
                         </td>
