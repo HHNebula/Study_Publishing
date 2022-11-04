@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>
+      <a href="./index.html" target="_self">Index Pages</a>
+    </h3>
+    <h3>Forms - Input Types</h3>
+    <form action="./forms_Basic.html" method="get" id="form_01">
+      <div>
+        <!--id = 내부의 식별자로 사용됨 디스플레이용으로는 의미가 있지만 웹서버에는 의미가 없음-->
+        <!--id = 유니크 해야함-->
+        <label for="">password</label>
+        <input type="password" name="password" id="" />
+      </div>
+      <div>
+        <label for="">Publishing Langs</label>
+        <div>
+          <input type="radio" name="langs" value="HTML" id="html_id" />
+          <label for="html_id">HTML</label>
+        </div>
+        <div>
+          <input type="radio" name="langs" value="CSS" id="CSS_id" />
+          <label for="CSS_id">CSS</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="langs"
+            value="JavaScript"
+            id="JavaScript_id"
+          />
+          <label for="JavaScript_id">JavaScript</label>
+        </div>
+      </div>
+      <div>Vehicles</div>
+      <div>
+        <div>
+          <input type="checkbox" name="Bike" value="bike" id="bike_id" />
+          <label for="bike_id">Bike</label>
+        </div>
+        <div>
+          <input type="checkbox" name="Bus" value="bus" id="bus_id" />
+          <label for="bus_id">Bus</label>
+        </div>
+        <div>
+          <input type="checkbox" name="Car" value="car" id="car_id" />
+          <label for="car_id">Car</label>
+        </div>
+      </div>
+      <div>
+        <label for="">Choose Date</label>
+        <input type="date" name="Date" id="" />
+      </div>
+      <div>
+        <input type="hidden" name="custId" value="U01" />
+        <input type="hidden" name="answerId" value="A03" />
+      </div>
+      <hr />
+      <div>
+        <button type="submit">Send</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+    <hr />
+    <!-- 특정인풋이나 폼태그들은 폼 안에 안들어가면 동작을하지않음-->
+    <button type="reset" for="form_01">Reset without form</button>
+  </body>
+</html>
