@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Publising</title>
+</head>
+
+<body>
+    <h1>표(Table) 만들기</h1>
+    <a href="../../index.html">&gt; Home</a>
+    <hr>
+
+    <h2>표의 구성 요소</h2>
+    <p>
+        &lt;table&gt; - 표의 시작<br>
+        &lt;caption&gt; 표 제목 &lt;/caption&gt;<br>
+        &lt;tr&gt; - 행<br>
+        &lt;th&gt; - 제목셀 &lt;/th&gt;<br>
+        &lt;td&gt; - 셀 &lt;td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt; 셀 내용 &lt;td&gt;<br>
+        &lt;td&gt; 셀 내용 &lt;td&gt;<br>
+        &lt;/table&gt;<br>
+    </p>
+
+    <table border="1">
+        <caption>표의 제목 부분</caption>
+        <tr>
+            <th>제목 셀</th>
+            <th>제목 셀</th>
+            <th>제목 셀</th>
+        </tr>
+        <tr>
+            <td>내용 셀</td>
+            <td>내용 셀</td>
+            <td>내용 셀</td>
+        </tr>
+    </table>
+
+    <h2>표 구조 정의</h2>
+    <p>표의 구조를 제목과 본문 요약 부분으로 나눈다.</p>
+    <p>thead / tbody / tfoot 태그 사용</p>
+    <p>웹 브라우저에 나타나지는 않지만 낭독기나 자바스크립트로 읽어올 수 있음</p>
+    <p>표가 길 경우 제목과 바닥을 고정하고 중간 내용 셀만 스크롤 되도록 가능</p>
+
+    <h2>colspan rowspan 셀 병합</h2>
+    <strong>&lt;td colspan="합칠 셀의 개수"&gt;셀 내용&lt;td&gt;</strong><br>
+    <strong>&lt;td rowspan="합칠 셀의 개수"&gt;셀 내용&lt;td&gt;</strong>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>제목1</th>
+                <th>제목2</th>
+                <th>제목3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">colspan 2</td>
+                <td rowspan="2">rowspan 2</td>
+            </tr>
+            <tr>
+                <td colspan="2">colspan 2</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+
+</html>
