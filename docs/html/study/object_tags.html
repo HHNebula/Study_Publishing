@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Publising</title>
+</head>
+
+<body>
+    <h1>오디오와 비디오 삽입하기</h1>
+    <a href="../../index.html">&gt; Home</a>
+    <hr>
+
+    <h2>object Tag</h2>
+    <strong>기본형 : &lt;object width="너비" height="높이" data="파일"&gt;&lt;/object&gt;</strong>
+    <p>음악 파일 뿐만 아니라 동영상이나 자바 애플릿, PDF 파일 등 다양한 개체를 삽입</p>
+    <p>data 속성 - 재생할 파일을 지정</p>
+    <p>width, height 속성 - 플레이어 화면 크기 지정</p>
+
+    <h2>embed Tag</h2>
+    <strong>기본형 : &lt;embed src="파일경로" width="너비" height="높이"&gt;</strong>
+    <p>대부분 브라우저에서 사용 가능</p>
+    <p>object, audio, video 태그를 지원하는 브라우저에서 멀티미디어 삽입 시 사용</p>
+    <p>닫는 태그 없음</p>
+    <p>src 속성 - 멀티미디어 지정</p>
+    <p>width, height 속성 - 플레이어 크기 지정</p>
+
+    <h2>audi, video Tag</h2>
+    <strong>기본형 : &lt;audio src="파일경로"&gt;&lt;/audio&gt;</strong><br>
+    <strong>기본형 : &lt;video src="파일경로"&gt;&lt;/video&gt;</strong>
+    <p>audio, video 태그의 속성</p>
+    <table border="1">
+        <tr>
+            <th>속성</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <td>controls</td>
+            <td>플레이어 화면에 컨트롤 바 표시</td>
+        </tr>
+        <tr>
+            <td>autoplay</td>
+            <td>오디오나 비디오를 자동으로 실행</td>
+        </tr>
+        <tr>
+            <td>loop</td>
+            <td>오디오나 비디오를 반복 재생</td>
+        </tr>
+        <tr>
+            <td>muted</td>
+            <td>오디오나 비디오의 소리를 제거</td>
+        </tr>
+        <tr>
+            <td>preload</td>
+            <td>페이지를 불러올 때 오디오나 비디오 파일을 어떻게 로딩할 것인지 지정</td>
+        </tr>
+        <tr>
+            <td>width, height</td>
+            <td>비디오 플레이어의 너비와 높이를 지정, 둘 중 하나만 지정하여도 자동 계산</td>
+        </tr>
+        <tr>
+            <td>poster="파일"</td>
+            <td>video 태그에서 사용하는 속성, 재생되기 전 썸네일 이미지 지정</td>
+        </tr>
+    </table>
+
+</body>
+</html>
