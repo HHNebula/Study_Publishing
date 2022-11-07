@@ -13,7 +13,221 @@
     <a href="../../index.html">&gt; Home</a>
     <hr>
 
-    <h2>img Tag</h2>
+    <h2>폼이란?</h2>
+    <p>사용자가 웹 사이트로 정보를 보낼 수 있는 요소</p>
+    <p>폼과 관련된 대부분의 작업은 정보를 입력받아 저장하거나 검색, 수정하는 작업</p>
+    <p>이러한 작업은 데이버 테이스를 기반으로 함</p>
+    <p>아이디를 입력하는 텍스트 필드나 버튼 등의 형태는 HTNL 에서 작성</p>
+    <p>입력된 정보를 처리하는 것은 ASP 나 PHP 같은 서버 프로그래밍 이용</p>
+
+    <h2>form Tag 기본형</h2>
+    <p>&lt;form 속성=속성값&gt;</p>
+    <p>여러 폼 요소 작성</p>
+    <p>&lt;/table&gt;</p>
+
+    <h2>form Tag 속성</h2>
+    <table border="1">
+        <tr>
+            <th>속성</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <td>method</td>
+            <td>
+                사용자가 입력한 내용을 서버쪽으로 어떻게 넘겨줄 것인지 지정<br>
+                get - 데이터를 256 ~ 4,096 byte 까지 전달 가능, 사용자 입력 값이 주소 표시줄에 드러남<br>
+                post - 입력한 내용의 길이에 제한이 없음, 사용자 입력 값이 주소 표시줄에 보여지지 않음
+            </td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>자바스크립트로 폼을 제어할 때 사용할 폼의 이름을 지정</td>
+        </tr>
+        <tr>
+            <td>action</td>
+            <td>form 태그 안의 내용을 처리해 줄 서버 프로그램을 지정</td>
+        </tr>
+        <tr>
+            <td>target</td>
+            <td>action 속성에서 지정한 스크립트 파일을 현재 창이 아닌 다른 위치에서 열도록 함</td>
+        </tr>
+    </table>
+
+    <h2>fieldset Tag / legend Tag</h2>
+    <p>fieldset - 폼 요소를 그룹으로 묶는 태그</p>
+    <p>legend - 그룹으로 묶는 구역에 제목을 붙이는 태그</p>
+    <p>&lt;fieldset&gt;</p>
+    <p>&lt;legend&gt;그룹 이름&lt;/legend&gt;</p>
+    <p>&lt;/fieldset&gt;</p>
+    <form action="">
+        <fieldset>
+            <legend>legend Tag 1</legend>
+            <p>폼의 기타 요소들</p>
+        </fieldset>
+        <fieldset>
+            <legend>legend Tag 2</legend>
+            <p>폼의 기타 요소들</p>
+        </fieldset>
+    </form>
+
+    <h2>label Tag</h2>
+    <p>input 태그와 같은 폼 요소에 레이블을 붙일 때 사용</p>
+    <p>label 태그의 for 속성과 input 태그의 id 속성을 동일하게 작성하여 연결함</p>
+    <form action="">
+        <label for="user_id">아이디 레이블</label>
+        <input type="text" id="user_id">
+    </form>
+
+    <h2>input 태그의 주요 타입</h2>
+    <table = border="1">
+        <tr>
+            <th>종류</th>
+            <th>설명</th>
+            <th>추가 속성</th>
+        </tr>
+        <tr>
+            <td>text</td>
+            <td>한 줄짜리 텍스트 입력 박스<br>주로 아디나 이름, 주소 등 텍스트 입력</td>
+            <td rowspan="6">size = 화면에 보여지는 필드의 길이<br>value = 텍스트 필드 부분에 보여질 내용, password 는 X<br>maxlength = 입력 가능한 최대 문자 수정하는</td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td>비빌번호 입력 필드, 입력값이 문서에 보여지지 않음<br>사용자가 입력하는 내용이 * 또는 • 로 보여짐</td>
+        </tr>
+        <tr>
+            <td>search</td>
+            <td>검색할 때 입력하는 필드<br>검색 창에 x 가 표시되어 검색어 삭제 쉬움</td>
+        </tr>
+        <tr>
+            <td>url</td>
+            <td>url 주소를 입력할 수 있는 필드</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>이메일 주소를 입력할 수 있는 필드<br>메일 주소 형식 자동 체크</td>
+        </tr>
+        <tr>
+            <td>tel</td>
+            <td>전화번호를 입력할 수 있는 필드<br>사용자 입력을 체크하지는 않음</td>
+        </tr>
+        <tr>
+            <td>checkbox</td>
+            <td>주어진 여러 항목에서 다수를 선택할 수 있는 체크 박스</td>
+            <td rowspan="2">name = 버튼이 여러개 있을 경우 구분하기 위한 이름, 관련 있는 그룹 끼리 동일한 name 사용<br>value = 선택한 버튼을 서버에 알려줄 때 넘길 값, 영문 또는 숫자여야 함, 필수값<br>checked = 선택이 되어 있는 상태로 출력</td>
+        </tr>
+        <tr>
+            <td>radio</td>
+            <td>주어진 여러 항목에서 하나만 선택할 수 있는 라디오 버튼</td>
+        </tr>
+        <tr>
+            <td>number</td>
+            <td>숫자를 조절할 수 있는 스핀 박스</td>
+            <td rowspan="2">min = 필드에 입력할 수 있는 최소값, 기본값은 0<br>max = 필드에 입력할 수 있는 최댓값, 기본값은 100<br>step = 숫자 간격 조절, 기본값은 1<br>value = 필드에 표시할 초기값</td>
+        </tr>
+        <tr>
+            <td>range</td>
+            <td>숫자를 조절할 수 있는 슬라이드 막대</td>
+        </tr>
+        <tr>
+            <td>date</td>
+            <td>사용자 지역을 기준으로 연월일 날짜를 삽입</td>
+            <td rowspan="2">type="date | month | week" 3가지 중 하나 선택<br>연월일 모두, 연월 까지만, 주 단위로 선택</td>
+        </tr>
+        <tr>
+            <td>month</td>
+            <td>사용자 지역을 기준으로 연월 날짜를 삽입</td>
+        </tr>
+        <tr>
+            <td>datetime</td>
+            <td>국제 표준시로 설정된 날짜와 시간 삽입<br>-연월일시분초분할초</td>
+            <td rowspan="2">type="time | datetime | datetime-local" 3가지 중 하나 선택<br>시간 만 입력할 지, 날짜도 입력할지 선택,<br>datetime-local은 사용자 지역에 맞는 날짜와 시간</td>
+        </tr>
+        <tr>
+            <td>datetime-local</td>
+            <td>사용자가 있는 지역을 기준으로 날짜와 시간 삽입<br>-연월일시분초분할초</td>
+        </tr>
+        <tr>
+            <td>submit</td>
+            <td>전송 버튼</td>
+            <td rowspan="2">value 속성을 이용해 버튼 표시 내용 지정<br>type="image" 사용 시 submit 버튼 대신 이미지 삽입</td>
+        </tr>
+        <tr>
+            <td>reset</td>
+            <td>리셋 버튼</td>
+        </tr>
+        <tr>
+            <td>button</td>
+            <td>일반 버튼</td>
+            <td>기능 없이 버튼 형태만 삽입<br>주로 자바스크립트 실행 시 사용<br>value 속성으로 버튼 표시 내용 지정</td>
+        </tr>
+        <tr>
+            <td>file</td>
+            <td>파일 첨부 버튼</td>
+            <td>파일 선택이나 찾아보기 버튼으로 표시됨</td>
+        </tr>
+        <tr>
+            <td>hidden</td>
+            <td>사용자에게 보이지는 않지만 서버로 넘겨주는 값이 있는 필드</td>
+            <td>value 속성으로 서버로 넘길 값 지정</td>
+        </tr>
+    </table>
+
+    <h2>input 태그의 속성</h2>
+    <table border="1">
+        <tr>
+            <th>속성</th>
+            <th>내용</th>
+        </tr>
+        <tr>
+            <td>autofocus</td>
+            <td>페이지를 불러오자마자 원하는 폼 요소에 마우스 커서 표시</td>
+        </tr>
+        <tr>
+            <td>placeholder</td>
+            <td>입력란에 표시하는 힌트로 클릭 시 사라짐</td>
+        </tr>
+        <tr>
+            <td>readonly</td>
+            <td>내용을 보기만 하고 입력하지 못하게 함</td>
+        </tr>
+        <tr>
+            <td>required</td>
+            <td>필수 필드 체크, 브라우저에서 직접 체크함</td>
+        </tr>
+    </table>
+
+    <h2>form 에서 사용하는 여러 태그</h2>
+    <table border="1">
+        <tr>
+            <th>태그</th>
+            <th>내용 / 속성</th>
+        </tr>
+        <tr>
+            <td>textarea</td>
+            <td>게시판 글 입력 양식, 사용자 약관 등</td>
+        </tr>
+        <tr>
+            <td>select / optgroup / option</td>
+            <td>여러 옵션 중에서 드롭다운 선택</td>
+        </tr>
+        <tr>
+            <td>select</td>
+            <td>size - 화면에 표시할 드롭다운 개수<br>multiple - 드롭다운 목록에서 둘 이상의 항목을 선택할 때 사용</td>
+        </tr>
+        <tr>
+            <td>option</td>
+            <td>value - 해당 항목을 선택할 때 서버로 넘겨줄 값<br>selected - 드롭다운 메뉴를 삽입할 때 기본적으로 선택해서 보여줄 항목</td>
+        </tr>
+        <tr>
+            <td>datalist, option</td>
+            <td>데이터 목록에 제시한 값중에서 선택 시 그 값이 자동으로 텍스트 필드에 입력됨<br>데이터 목록에 id를 이용해 이름을 붙이고, input 태그의 list 속성에 데이터 목록 id를 지정함 </td>
+        </tr>
+        <tr>
+            <td>button</td>
+            <td>다양한 형태의 버튼 삽입<br>화면 낭독기에서 버튼임을 정확히 전달<br>CSS를 통해 원하는 형태로 꾸미기 가능</td>
+        </tr>
+    </table>
     
 </body>
+
 </html>
