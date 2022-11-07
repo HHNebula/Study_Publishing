@@ -5,6 +5,7 @@ html {
 h1 {
     font-size: 70px;
     color: steelblue;
+    margin: 0px;
     text-shadow: 5px 5px 5px black;
 }
 
@@ -13,7 +14,7 @@ h1 {
 }
 
 #bg_center {
-    width: 600px;
+    width: 550px;
     background-color: orange;
     padding: 20px;
     border: 5px solid black;
