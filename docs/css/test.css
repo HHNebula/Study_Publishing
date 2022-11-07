@@ -4,25 +4,18 @@ html {
 
 h1 {
     font-size: 70px;
-    text-align: center;
-}
-
-body {
-    width: 600px;
-    margin: auto auto;
-    background-color: #FF9500;
-    padding: 20px;
-    border: 5px solid black;
-}
-
-h1 {
-    margin: auto;
-    padding: 20px 0;
     color: steelblue;
     text-shadow: 5px 5px 5px black;
 }
 
-img {
-    display: block;
+#center {
+    text-align: center;
+}
+
+#bg_center {
+    width: 600px;
     margin: auto auto;
+    background-color: orange;
+    padding: 20px;
+    border: 5px solid black;
 }
