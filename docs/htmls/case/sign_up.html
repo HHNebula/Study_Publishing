@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB - KH_Study</title>
+    <link rel="stylesheet" href="../../CSSs/kh_style.css">
+</head>
+
+<body>
+    <h1 id="head">
+        <div>
+            Sign Up Page
+        </div>
+        <div>
+            <a href="../../index.html" style="font-size: 1vw;">Go to home</a>
+        </div>
+    </h1>
+
+    <!-- https://hhnebula.github.io/Study_Publishing/index.html?userName=%EA%B9%80%EB%91%98%EB%A6%AC&userId=dulleeOO&userPw=dul2lee2&userPwCheck=dul2lee2&emailHeader=dulleeOO&emailFooter=naver.com&domain=naver&emailCode=UEYdk1&phoneCode=010&phoneMid=1234&phoneEnd=5678&telCode=02&telMid=1234&telEnd=1234&zipcode=12345&addr=%EC%A0%9C%EC%A3%BC%EB%8F%84+%EC%A0%9C%EC%A3%BC%EC%8B%9C+%EC%95%A0%EC%9B%94%EC%9D%8D&detailAddr=%ED%82%A4%ED%8B%B0%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C&emailInfo=on&smsInfo=on -->
+    <div id="contents_full">
+        <form action="../../index.html" method="get">
+            <table border="1">
+                <colgroup>
+                    <col style="background-color: rgb(220, 220, 220);">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>
+                            <label for="userName">이름</label>
+                        </th>
+                        <td>
+                            <input type="text" name="userName" id="userName">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="userId">아이디</label>
+                        </th>
+                        <td>
+                            <input type="text" name="userId" id="userId">
+                            <input type="button" value="아이디중복확인">
+                            <div>
+                                <p>
+                                    6~16자까지 영문자(소문자), 숫자 사용 가능합니다.
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="userPw">비밀번호</label>
+                        </th>
+                        <td>
+                            <input type="password" name="userPw" id="userPw">
+                            <div>
+                                <p>
+                                    6~16자까지 영문자(대소문자), 숫자 및 특수문자 사용 가능합니다.<br>
+                                    3자리 연속 또는 같은 문자, 아이디는 사용하실 수 없습니다.
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="userPwCheck">비밀번호 확인</label>
+                        </th>
+                        <td>
+                            <input type="password" name="userPwCheck" id="userPwCheck">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="email">이메일</label>
+                        </th>
+                        <td>
+                            <div>
+                                <input type="text" name="emailHeader" id="email">
+                                @
+                                <input type="text" name="emailFooter" id="email">
+                                <select name="domain" id="domain">
+                                    <option value="non">메일주소선택</option>
+                                    <option value="naver">네이버</option>
+                                    <option value="daum">다음</option>
+                                    <option value="kakao">카카오</option>
+                                </select>
+                                <input type="button" value="인증코드발송">
+                            </div>
+                            <div>
+                                <input type="text" name="emailCode" id="code">
+                                <input type="button" value="인증확인">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="tel">연락처</label>
+                        </th>
+                        <td>
+                            <div>
+                                휴대전화
+                                <select name="phoneCode" id="tel">
+                                    <option value="non">선택</option>
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                </select>
+                                -
+                                <input type="text" name="phoneMid" id="tel">
+                                -
+                                <input type="text" name="phoneEnd" id="tel">
+                            </div>
+                            <div>
+                                일반전화
+                                <select name="telCode" id="tel">
+                                    <option value="non">선택</option>
+                                    <option value="02">02</option>
+                                    <option value="031">031</option>
+                                    <option value="032">032</option>
+                                    <option value="055">055</option>
+                                </select>
+                                -
+                                <input type="text" name="telMid" id="tel">
+                                -
+                                <input type="text" name="telEnd" id="tel">
+                            </div>
+                            <div>
+                                <p>
+                                    연락처는 둘 중 하나만 입력해도 됩니다.
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="zipcode">우편번호</label>
+                        </th>
+                        <td>
+                            <input type="text" name="zipcode" id="zipcode">
+                            <input type="button" value="주소검색">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="addr">주소</label>
+                            <label hidden
+                        </th>
+                        <td>
+                            <div>
+                                <input type="text" name="addr" id="addr" style="width:600px;">
+                            </div>
+                            <div>
+                                <input type="text" name="detailAddr" id="addr" style="width:300px;">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="info">정보수신 여부</label>
+                        </th>
+                        <td>
+                            서비스 및 이벤트 소식을
+                            <input type="checkbox" name="emailInfo" id="info">
+                            Email로 수신하겠습니다.
+                            <input type="checkbox" name="smsInfo" id="info">
+                            SMS로 수신하겠습니다.
+                            <input type="submit" value="send">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
