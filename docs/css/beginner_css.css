@@ -7,6 +7,9 @@
     margin: auto;
     padding: auto;
 }
+.nav {
+    margin-top: 45px;
+}
 
 .link{
     width: 150px;
@@ -26,6 +29,7 @@
     color: purple;
     font-size: 30px;
     font-weight: bold;
+    margin: 10px;
 }
 
 .contents {
