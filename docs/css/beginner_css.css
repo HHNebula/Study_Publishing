@@ -35,3 +35,9 @@
     margin: 10px;
     color: purple;
 }
+
+.line {
+    background-color: purple;
+    height: 2px;
+    border: 0px;
+}
