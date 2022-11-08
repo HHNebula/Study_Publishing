@@ -8,11 +8,8 @@
     padding: auto;
 }
 
-.nav {
-    width: 150px;
-}
-
 .nav .link{
+    width: 150px;
     display: flex;
     flex-direction: column;
     width: 100px;
