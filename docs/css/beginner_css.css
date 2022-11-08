@@ -1,0 +1,37 @@
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    background-color: wheat;
+    margin: auto;
+    padding: auto;
+}
+
+.nav {
+    width: 150px;
+}
+
+.nav .link{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    border-right: 10px solid black;
+    text-decoration: none;
+    justify-content: space-around;
+    color: blue;
+}
+
+.head {
+    color: purple;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contents {
+    margin: 10px;
+    color: purple;
+}
