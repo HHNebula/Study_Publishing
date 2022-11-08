@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Font</title>
+</head>
+<body>
+    <h1>CSS Font Style</h1>
+    <a href="../../index.html">&gt; Home</a>
+    <hr>
+
+    <h2>글꼴 관련 스타일</h2>
+
+    <h3>font-family 속성</h3>
+    <p>font-family:글꼴이름 | [글꼴이름, 글꼴이름]</p>
+    <p>선택자 { font-family: '맑은 고딕', 돋움, 굴림 }</p>
+    <p style="font-family:'Courier New', Courier, monospace;">style="font-family:'Courier New', Courier, monospace;"</p>
+    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"</p>
+    <ul>
+        <li>웹 문서에서 사용할 글꼴을 지정</li>
+        <li>body, p, hn 태그 등 텍스트를 사용하는 요소에서 사용</li>
+        <li>지정한 글꼴이 없을 경우에 대비해 두 번째, 세 번째 글꼴까지 지정</li>
+        <li>둘 이상의 글꼴 이름을 지정할 때는 쉼표로 구분</li>
+        <li>body 태그 스타일에서 한 번 정의하면 전체에 적용되고 문서 안의 모든 자식 요소에 계속 같은 글꼴이 사용됨</li>
+    </ul>
+
+    <h3>font-size 속성</h3>
+    <p>fonr-size: 절대 크기 | 상대 크기 | 크기 | 백분율</p>
+    <ul>
+        <li>절대 크기 : 브라우저에서 지정한 글자 크기</li>
+        <li>상대 크기 : 부모 요소의 글자 크기를 기준으로 상대적인 글자 크기를 지정</li>
+        <li>크기 : 브라우저와 상관없이 글자 크기를 직접 지정</li>
+        <li>백분율 : 부모 요소의 글자 크기를 기준으로 백분율( % ) 로 표시</li>
+        <li>키워드 사용 가능</li>
+        <ul>
+            <li>xx-small</li>
+            <li>x-small</li>
+            <li>small</li>
+            <li>medium</li>
+            <li>large</li>
+            <li>x-large</li>
+            <li>xx-large</li>
+        </ul>
+        <li>단위를 사용해 글자 크기 지정</li>
+        <ul>
+            <li>em : 부모 요소에서 지정한 대문자 M의 너비를 기준(1em)으로 한 후 비율값을 지정</li>
+            <li>rem : 문서 시작 부분에서 지정한 크기를 기준(1rem)으로 한 후 비율값을 지정</li>
+            <li>ex : 해당 글꼴의 소준자 x의 높이를 기준(1ex)으로 한 후 비율값을 지정</li>
+            <li>px : 모니터의 1픽셀을 기준(1px)로 한 후 비율값을 지정</li>
+            <li>pt : 포인트 라고 하며, 일반 문서에서 많이 사용</li>
+        </ul>
+    </ul>
+
+    <h3>font-style 속성</h3>
+    <p>font-style: nomal | iralic | oblique</p>
+    <p style="font-style: normal;">style="font-style: normal;"</p>
+    <p style="font-style: italic;">style="font-style: italic;"</p>
+    <p style="font-style: oblique;">style="font-style: oblique;"</p>
+
+    <h3>font-weight 속성</h3>
+    <p>font-weight: normal | bold | bolder | lighter | 100 | 200 | ... | 800 | 900</p>
+    <p style="font-weight: normal;">style="font-weight: normal;" 기본 값, 보통 굵기</p>
+    <p style="font-weight: bold;">style="font-weight: bold;" 굵게</p>
+    <p style="font-weight: bolder;">style="font-weight: bolder;" 원래보다 더 굵게</p>
+    <p style="font-weight: lighter;">style="font-weight: lighter;" 원래보다 더 가늘게</p>
+    <p style="font-weight: 800;">style="font-weight: 800;" 100~900 사이 입력, 클수록 더 굵게</p>
+
+</body>
+</html>
