@@ -1,15 +1,124 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Publising</title>
 </head>
+
 <body>
     <h1>CSS Layout</h1>
     <a href="../../index.html">&gt; Home</a>
     <hr>
-    
+
+    <h2>display 속성</h2>
+    <p>요소의 배치 방법을 결정하는 속성</p>
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <th>종류</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <td>block</td>
+            <td>인라인 레벨 요소를 블록 레벨 요소로 만듬</td>
+        </tr>
+        <tr>
+            <td>inline</td>
+            <td>블록 라인 요소를 인라인 레벨 요소로 만듬</td>
+        </tr>
+        <tr>
+            <td>inline-block</td>
+            <td>인라인 레벨 요소와 블록 레벨 요소의 속성을 둘다 가짐<br>마진과 패딩을 지정할 수 있음</td>
+        </tr>
+        <tr>
+            <td>none</td>
+            <td>해당 요소를 화면에 표시하지 않음</td>
+        </tr>
+    </table>
+
+    <h2>flaot 속성</h2>
+    <p>요소를 왼쪽이나 오른쪽에 떠 있게 만드는 속성</p>
+    <p>float: left | right | none</p>
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <th>종류</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <td>left</td>
+            <td>해당 요소를 문서의 왼쪽으로 배치</td>
+        </tr>
+        <tr>
+            <td>right</td>
+            <td>해당 요소를 문서의 오른쪽으로 배치</td>
+        </tr>
+        <tr>
+            <td>none</td>
+            <td>좌우 어느쪽으로도 배치하지 않음</td>
+        </tr>
+    </table>
+    <img src="../../imgs/nature.jpg" alt="nature" style="float: left; margin: 10px;">
+    <p>style="float: left; margin: 10px;"</p>
+    <p>왼쪽에 떠있게 만들어 우측에 다른 태그가 올 수 있음</p>
+    <br><br><br><br><br>
+    <h2>clear 속성</h2>
+    <p>float 속성을 무효화 시키는 속성</p>
+    <p>clear: none | left | right | both</p>
+    <p>선택한 위치의 float 를 해제함</p>
+
+    <h2>left, right, bottom, top 속성</h2>
+    <p>웹 요소의 위치를 지정하는 속성</p>
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <th>종류</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <td>left</td>
+            <td>기준 위치와 요소 사이에 왼쪽으로 얼마나 떨어져 있는지</td>
+        </tr>
+        <tr>
+            <td>right</td>
+            <td>기준 위치와 요소 사이에 오른쪽으로 얼마나 떨어져 있는지</td>
+        </tr>
+        <tr>
+            <td>top</td>
+            <td>기준 위치와 요소 사이에 위쪽으로 얼마나 떨어져 있는지</td>
+        </tr>
+        <tr>
+            <td>bottom</td>
+            <td>기준 위치와 요소 사이에 아래쪽으로 얼마나 떨어져 있는지</td>
+        </tr>
+    </table>
+
+    <h2>position 속성</h2>
+    <p>웹 문서 안에 요소들을 배치하기 위한 속성</p>
+    <p>position: static | relative | absolute | fixed </p>
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <th>종류</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <td>static</td>
+            <td>요소를 문서의 흐름에 맞추어 배치</td>
+        </tr>
+        <tr>
+            <td>relative</td>
+            <td>이전 요소에 자연스럽게 연결해 배치하되 위치를 지정할 수 있음</td>
+        </tr>
+        <tr>
+            <td>absolute</td>
+            <td>원하는 위치를 지정해 배치</td>
+        </tr>
+        <tr>
+            <td>fixed</td>
+            <td>지정한 위치에 고정 배치, 요소가 잘릴 수 있음</td>
+        </tr>
+    </table>
+
 </body>
+
 </html>
