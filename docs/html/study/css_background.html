@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Publising</title>
+</head>
+
+<body>
+    <h1>CSS Background</h1>
+    <a href="../../index.html">&gt; Home</a>
+    <hr>
+
+    <h2>background-color 속성</h2>
+    <p>요소의 배경 색 지정, 16진수나 rgba값 또는 색상 이름 사용</p>
+    <p>배경색은 상속되지 않음</p>
+    <p style="background-color: antiquewhite;">style="background-color: antiquewhite;"/p>
+
+    <h2>background-clip 속성</h2>
+    <p>배경을 어디까지 적용할 지 지정</p>
+    <p>background-clip: border-box | padding-box | content-box</p>
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <th>속성</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <td>border-box</td>
+            <td>박스 모델의 가장 외곽인 테두리까지 적용</td>
+        </tr>
+        <tr>
+            <td>padding-box</td>
+            <td>박스 모델에서 테두리를 뺀 패딩 범위까지 적용</td>
+        </tr>
+        <tr>
+            <td>content-box</td>
+            <td>박스 모델에서 내용 부분에만 적용</td>
+        </tr>
+    </table>
+    <br>
+    <img src="../../imgs/box_model.png" alt="box_model" style="display: block;" >
+
+    <h2>background-img 속성</h2>
+    <p>배경 이미지 파일 경로 지정</p>
+    <p>background-img: url(파일경로)</p>
+
+    <h2>background-repeat 속성</h2>
+    <p>배경 이미지 반복 여부 및 반복 방향 지정</p>
+    <p>background-repeat: repeat | repeat-x | repeat-y | no-repeat</p>
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <th>속성</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <td>repeat</td>
+            <td>브라우저 화면에 가득 찰 때까지 가로와 세로로 반복</td>
+        </tr>
+        <tr>
+            <td>repeat-x</td>
+            <td>브라우저의 너비와 같아질 때까지 가로로 반복</td>
+        </tr>
+        <tr>
+            <td>repeat-y</td>
+            <td>브라우저의 높이와 같아질 때까지 세로로 반복</td>
+        </tr>
+        <tr>
+            <td>no-repeat</td>
+            <td>배경 이미지를 한 번만 표시하고 반복하지 않음</td>
+        </tr>
+    </table>
+
+    <h2>background-position 속성</h2>
+    <p>배경 이미지를 반복하지 않을 이미지를 경우 표시할 위치 지정</p>
+    <p>background-position: 수평위치 수직위치</p>
+    <p>수평위치 : left | center | right | 백분율 | 길이 값</p>
+    <p>수직위치 : top | center | bottom | 백분율 | 길이 값</p>
+
+    <h2>background-origin 속성</h2>
+    <p>배경 이미지를 배치하기 위한 기준 설정</p>
+    <p>background-origin: border-box | padding-box | content-box</p>
+    
+    <h2>background-attachment 속성</h2>
+    <p>배경 이미지를 고정하는 속성</p>
+    <p>background-attachment: scroll | fixed </p>
+    <p>scroll 선택 시 화면을 스크롤하면 이미지도 스크롤됨, 기본값</p>
+
+    <h2>background-size 속성</h2>
+    <p>배경 이미지 크기 조절</p>
+    <p>background-size: auto | contain | cover | 크기 값 | 백분율</p>
+    <ul>
+        <li>auto - 원래 이미지 크기 만큼 표시, 기본값</li>
+        <li>contain - 요소 안에 배경 이미지가 다 들어오도록 확대 및 축소</li>
+        <li>cover - 배경 이미지로 요소를 모두 덮도록 이미지를 확대 및 축소</li>
+        <li>크기 값 - 이미지의 너비와 높이 지정, 하나만 주어진다면 너비값으로 인식 후 자동 계산</li>
+        <li>백분율 - 요소의 크기를 기준으로 백분율 지정, 크기에 맞도록 확대 및 축소</li>
+    </ul>
+</body>
+
+</html>
