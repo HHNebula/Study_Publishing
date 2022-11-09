@@ -1,0 +1,53 @@
+#box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.raw_input input {
+    width: 300px;
+    margin: 5px;
+}
+
+.raw_label label {
+    margin: 5px
+}
+
+#content {
+    height: 200px;
+}
+
+#box div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.raw_label {
+    align-items: center;
+}
+
+.raw_input {
+    align-items: flex-start;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+thead th {
+    height: 40px;
+}
+
+th {
+    background-color: darksalmon;
+    color: white;
+}
+
+.notice_title {
+    width: 400px;
+}
+
+td {
+    background-color: beige;
+}
