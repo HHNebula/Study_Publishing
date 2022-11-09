@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+}
+
+div {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    margin-bottom: 10px;
+
+    /* 어떤 css 프로퍼티를 transition할지 지정 */
+    transition-property: width, background-color;
+
+    /* width와 bg-color가 2초동안 변화 */
+    transition-duration: 2s, 2s;
+}
+
+div:hover {
+    /* 마우스를 올리면 transition발동해서 적용될 상태 */
+    width: 300px;
+    background-color: blue;
+}
