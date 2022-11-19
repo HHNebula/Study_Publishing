@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Publising</title>
+    <style>
+        .wrap {
+            /* 공통 스타일 */
+            width: 100px;
+            height: 100px;
+            background: black;
+            border: 2px solid yellow;
+        }
+
+        #t1 {
+            /* 지속시간 */
+            transition-duration: 2s;
+
+            /* 클릭 형태의 마우스 커서 */
+            cursor: pointer;
+        }
+
+        #t1:active {
+            background: lightgreen;
+            border: 2px solid green;
+        }
+
+        #t2 {
+            transition-property: background-color, transform, width, height;
+            transition-duration: 3s, 2s, 1s, 3s;
+        }
+
+        #t2:hover {
+            background-color: salmon;
+            border: 3px solid salmon;
+            width: 300px;
+            height: 200px;
+            transform: rotateY(180deg);
+        }
+
+        .wrap2 {
+            width: 70px;
+            height: 70px;
+            background-color: skyblue;
+        }
+
+        #track:hover #key1 {
+            width: 300px;
+            transition: all 3s linear;
+            background-color: lightcoral;
+        }
+
+        #track:hover #key2 {
+            width: 300px;
+            transition: all 3s ease;
+            background-color: lightgray;
+        }
+
+        #track:hover #key3 {
+            width: 300px;
+            transition: all 3s ease-in;
+            background-color: lightgreen;
+        }
+
+        #track:hover #key4 {
+            width: 300px;
+            transition: all 3s ease-out;
+            background-color: lightpink;
+        }
+
+        #track:hover #key5 {
+            width: 300px;
+            transition: all 3s ease-in-out;
+            background-color: lightseagreen;
+        }
+
+        #delay {
+            transition-duration: 3s;
+            transition-delay: 1.5s;
+        }
+
+        #delay:hover {
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            transform: rotateX(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>트랜지션 연습</h1>
+    <a href="../../index.html">go back</a>
+    <hr>
+
+    <h3>트랜지션 진행 시간 설정</h3>
+    <div class="wrap" id="t1"></div>
+    <hr>
+
+    <h3>트랜지션 영역 별 변화 속도 설정</h3>
+    <div class="wrap" id="t2"></div>
+    <hr>
+
+    <h3>트랜지션 속도 키워드</h3>
+    <div id="track">
+        <h4>liner</h4>
+        <div class="wrap2" id="key1"></div>
+        <h4>ease</h4>
+        <div class="wrap2" id="key2"></div>
+        <h4>ease-in</h4>
+        <div class="wrap2" id="key3"></div>
+        <h4>ease-out</h4>
+        <div class="wrap2" id="key4"></div>
+        <h4>ease-in-out</h4>
+        <div class="wrap2" id="key5"></div>
+    </div>
+    <hr>
+
+    <h3>트랜지션 지연시키기</h3>
+    <div class="wrap" id="delay">
+
+    </div>
+
+</body>
+
+</html>
