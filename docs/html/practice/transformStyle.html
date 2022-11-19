@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜지션 연습</title>
+    <style>
+        .wrap1 {
+            border: 1px solid black;
+            width: 200px;
+            height: 150px;
+            display: inline-block;
+        }
+
+        .wrap1>img {
+            width: 200px;
+            height: 150px;
+        }
+
+        .left-top:active {
+            transform: rotateZ(25deg);
+            transform-origin: left top;
+        }
+
+        .right-top:active {
+            transform: rotateZ(25deg);
+            transform-origin: right top;
+        }
+
+        .left-bottom:active {
+            transform: rotateZ(25deg);
+            transform-origin: left bottom;
+        }
+
+        .right-bottom:active {
+            transform: rotateZ(25deg);
+            transform-origin: right bottom;
+        }
+
+        #wrap2 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .box1 {
+            transform: rotateY(45deg);
+            width: 200px;
+            height: 200px;
+            background: green;
+        }
+
+        .box2 {
+            transform-origin: left top;
+            transform: rotateX(45deg);
+            width: 200px;
+            height: 200px;
+            background: lightgreen;
+        }
+
+        .style {
+            transform-style: left;
+        }
+
+        .style:active {
+            transform-style: preserve-3d;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>기타 변형 속성</h1>
+
+    <h3>변형 기준점 설정하기</h3>
+    <div>
+        <div class="wrap1">
+            <img src="../../imgs/nature.jpg" alt="" class="left-top">
+        </div>
+        <div class="wrap1">
+            <img src="../../imgs/nature.jpg" alt="" class="right-top">
+        </div>
+        <div class="wrap1">
+            <img src="../../imgs/nature.jpg" alt="" class="left-bottom">
+        </div>
+        <div class="wrap1">
+            <img src="../../imgs/nature.jpg" alt="" class="right-bottom">
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>3D 스타일 적용</h3>
+
+    <div id="wrap2">
+        <div class="box1 style">
+            <div class="box2">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
